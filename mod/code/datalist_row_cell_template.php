@@ -1,0 +1,1 @@
+            <div class="w3-col {{COLUMN_WIDTH}} w3-padding-small">{{{{INPUT_NAME}}}}</div>

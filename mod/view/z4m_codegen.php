@@ -18,8 +18,8 @@
  * --------------------------------------------------------------------
  * ZnetDK 4 Mobile Code Generator view
  *
- * File version: 1.0
- * Last update: 12/17/2024
+ * File version: 1.1
+ * Last update: 12/18/2024
  */
 ?>
 <form id="z4m-codegen-form" class="w3-content" data-zdk-submit="z4mCodeGenCtrl:generate">
@@ -387,9 +387,14 @@ $(function(){
                 formData[property].forEach(function(value, index){
                     if(detailInputs.length < index + 1) {
                         detailInputs[index] = {};
-                    }                    
+                    }
                     detailInputs[index][property] = value;
                 });
+            } else if (property.substring(property.length -2) === '[]') {
+                if (detailInputs.length === 0) {
+                    detailInputs[0] = {};
+                }
+                detailInputs[0][property] = formData[property];
             } else {
                 const formObj = z4m.form.make('#z4m-codegen-form');
                 formObj.setInputValue(property, formData[property]);

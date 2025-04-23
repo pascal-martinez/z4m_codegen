@@ -89,5 +89,12 @@ $color = defined('CFG_MOBILE_W3CSS_THEME_COLOR_SCHEME')
                 });
             });
         });
+        // List header sticky position taking in account ZnetDK autoHideOnScrollEnabled property
+        onTopSpaceChange();
+        $('body').on('topspacechange.{{ELEMENT_ID_PREFIX}}', onTopSpaceChange);
+        function onTopSpaceChange() {
+            $('#{{ELEMENT_ID_PREFIX}}-list-header').css('top', z4m.header.autoHideOnScrollEnabled
+                ? 0 : z4m.header.getHeight());
+        }
     });
 </script>

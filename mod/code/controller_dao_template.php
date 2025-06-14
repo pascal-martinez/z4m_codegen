@@ -107,7 +107,7 @@ class __CONTROLLER_CLASS_NAME__ extends \AppController {
             $dao->remove($rowFound['id']);
             $response->setSuccessMessage(NULL, LC_MSG_INF_REMOVE_RECORD . " ID={$rowFound['id']}.");
         } else {
-            $response->setFailedMessage(NULL, LC_MSG_INF_NO_RESULT_FOUND .  " ID={$rowFound['id']}.");
+            $response->setFailedMessage(NULL, LC_MSG_INF_NO_RESULT_FOUND .  " ID={$request->id}.");
         }
         return $response;
     }

@@ -10,16 +10,13 @@ $color = defined('CFG_MOBILE_W3CSS_THEME_COLOR_SCHEME')
             'modal_header' => 'w3-theme-dark', 'btn_hover' => 'w3-hover-theme',
             'modal_footer_border_top' => 'w3-border-theme',
             'modal_footer' => 'w3-theme-l4', 'btn_cancel' => 'w3-red',
-            'btn_action' => 'w3-theme-action', 'btn_submit' => 'w3-green'
+            'btn_action' => 'w3-theme-action', 'btn_submit' => 'w3-green',
+            'icon' => 'w3-text-theme', 'tag' => 'w3-theme'
         ];
 ?>
 <style>
     /*#{{ELEMENT_ID_PREFIX}}*/-list-header {
         position: sticky;
-    }
-    /*#{{ELEMENT_ID_PREFIX}}*/-list-header li {
-        padding-top: 0;
-        padding-bottom: 0;
     }
 </style>
 <!-- Header -->

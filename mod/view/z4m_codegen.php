@@ -18,8 +18,8 @@
  * --------------------------------------------------------------------
  * ZnetDK 4 Mobile Code Generator view
  *
- * File version: 1.1
- * Last update: 12/18/2024
+ * File version: 1.2
+ * Last update: 06/10/2025
  */
 ?>
 <form id="z4m-codegen-form" class="w3-content" data-zdk-submit="z4mCodeGenCtrl:generate">
@@ -32,7 +32,7 @@
         <p><i>Enter both the name and properties of the entity to manage (create, read, edit and remove).</i></p>
         <label>
             <b>Entity name</b>
-            <input class="w3-input w3-border w3-margin-bottom" name="entity_name" type="text" maxlength="25" required placeholder="For example, Customer, Book, Vehicule, Equipment, Meeting, Task etc.">
+            <input class="w3-input w3-border w3-margin-bottom" name="entity_name" type="text" maxlength="35" required placeholder="For example, Customer, Book, Vehicule, Equipment, Meeting, Task etc.">
         </label>
         <fieldset>
             <legend><b class="zdk-required">Entity properties</b></legend>
@@ -51,7 +51,7 @@
                     <div class="name w3-col l3">
                         <label>
                             <b>Input name</b>
-                            <input class="w3-input w3-border w3-margin-bottom" name="input_name[]" type="text" maxlength="40" required spellcheck="false" placeholder="Value of the 'name' attribute">
+                            <input class="w3-input w3-border w3-margin-bottom" name="input_name[]" type="text" maxlength="50" required spellcheck="false" placeholder="Value of the 'name' attribute">
                         </label>
                     </div>
                     <div class="type w3-col l2">
@@ -99,15 +99,15 @@
         </label>
         <label>
             <b>HTML element ID prefix</b>
-            <input class="w3-input w3-border w3-margin-bottom" name="element_id_prefix" type="text" maxlength="25" spellcheck="false" required placeholder="Prefix given to the HTML element identifiers">
+            <input class="w3-input w3-border w3-margin-bottom" name="element_id_prefix" type="text" maxlength="50" spellcheck="false" required placeholder="Prefix given to the HTML element identifiers">
         </label>
         <label>
             <b>Controller name</b>
-            <input class="w3-input w3-border w3-margin-bottom" name="controller_name" type="text" maxlength="30" spellcheck="false" required placeholder="PHP App Controller connected to the entity data form">
+            <input class="w3-input w3-border w3-margin-bottom" name="controller_name" type="text" maxlength="50" spellcheck="false" required placeholder="PHP App Controller connected to the entity data form">
         </label>
         <label>
             <b>SQL table name</b>
-            <input class="w3-input w3-border w3-margin-bottom" name="sql_table_name" type="text" maxlength="30" spellcheck="false" required placeholder="SQL table name for storing the entity records">
+            <input class="w3-input w3-border w3-margin-bottom" name="sql_table_name" type="text" maxlength="50" spellcheck="false" required placeholder="SQL table name for storing the entity records">
         </label>
         <fieldset class="w3-margin-bottom">
             <legend><b>Code location</b></legend>

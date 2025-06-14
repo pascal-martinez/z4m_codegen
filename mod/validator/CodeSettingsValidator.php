@@ -18,8 +18,8 @@
  * --------------------------------------------------------------------
  * ZnetDK 4 Mobile Code Generator Validator
  *
- * File version: 1.0
- * Last update: 11/19/2024
+ * File version: 1.1
+ * Last update: 06/10/2025
  */
 
 namespace z4m_codegen\mod\validator;
@@ -42,7 +42,7 @@ class CodeSettingsValidator extends \Validator {
     }
 
     /**
-     * Entity name is required, not too longer (25 chars max) and contains only
+     * Entity name is required, not too long (35 chars max) and contains only
      * letters, spaces, numbers and single quote characters
      * @param String $value Entity name
      * @return boolean FALSE if invalid
@@ -52,7 +52,7 @@ class CodeSettingsValidator extends \Validator {
             $this->setErrorMessage(LC_MSG_ERR_MISSING_VALUE);
             return FALSE;
         }
-        if (strlen($value) > 25) {
+        if (strlen($value) > 35) {
             $this->setErrorMessage(LC_MSG_ERR_VALUE_BADLENGTH);
             return FALSE;
         }
@@ -82,7 +82,7 @@ class CodeSettingsValidator extends \Validator {
     }
 
     /**
-     * Required, only letters and dash character. Max length: 25 characters.
+     * Required, only letters and dash character. Max length: 50 characters.
      * @param String $value Element ID prefix
      * @return boolean FALSE if invalid
      */
@@ -91,7 +91,7 @@ class CodeSettingsValidator extends \Validator {
             $this->setErrorMessage(LC_MSG_ERR_MISSING_VALUE);
             return FALSE;
         }
-        if (strlen($value) > 25) {
+        if (strlen($value) > 50) {
             $this->setErrorMessage(LC_MSG_ERR_VALUE_BADLENGTH);
             return FALSE;
         }
@@ -103,7 +103,7 @@ class CodeSettingsValidator extends \Validator {
     }
 
     /**
-     * Required, only letters, max length: 30 characters.
+     * Required, only letters, max length: 50 characters.
      * @param String $value Controller name
      * @return boolean FALSE if invalid
      */
@@ -112,7 +112,7 @@ class CodeSettingsValidator extends \Validator {
             $this->setErrorMessage(LC_MSG_ERR_MISSING_VALUE);
             return FALSE;
         }
-        if (strlen($value) > 30) {
+        if (strlen($value) > 50) {
             $this->setErrorMessage(LC_MSG_ERR_VALUE_BADLENGTH);
             return FALSE;
         }
@@ -202,7 +202,7 @@ class CodeSettingsValidator extends \Validator {
         }
         $inputNames = [];
         foreach ($values as $position => $value) {
-            if (strlen($value) > 40) {
+            if (strlen($value) > 50) {
                 $this->setErrorMessage(LC_MSG_ERR_VALUE_BADLENGTH);
                 $this->setErrorVariable("input_name[]:{$position}");
                 return FALSE;

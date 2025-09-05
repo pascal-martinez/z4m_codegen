@@ -1,5 +1,8 @@
 # CHANGE LOG: Code Generator (z4m_codegen)
 
+## Version 1.3, 2025-09-03
+- BUG FIXING: the row focus outline was not visible in the generated datalist.
+
 ## Version 1.2, 2025-06-10
 - CHANGE: the maximum text length is increased to 35 characters for the "Entity Name" input field
 and to 50 characters for the "Input Name", "HTML Element ID Prefix", "Controller Name", and "SQL Table Name" input fields.

@@ -1,5 +1,5 @@
-            <a class="edit" href="javascript:void(0)">
-                <div class="w3-col {{COLUMN_WIDTH}} w3-padding-small">
+            <div class="w3-col {{COLUMN_WIDTH}} w3-padding-small">
+                <a class="edit" href="javascript:void(0)">
                     <span class="w3-tag <?php echo $color['tag']; ?>">{{id}}</span>
-                </div>
-            </a>
+                </a>
+            </div>

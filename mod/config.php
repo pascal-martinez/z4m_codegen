@@ -18,17 +18,17 @@
  * --------------------------------------------------------------------
  * Parameters of the ZnetDK 4 Mobile Code Generator module
  *
- * File version: 1.2
- * Last update: 06/10/2025
+ * File version: 1.3
+ * Last update: 09/03/2025
  */
 
 /**
  * Module version number
  * @var string Version
  */
-define('MOD_Z4M_CODEGEN_VERSION_NUMBER','1.2');
+define('MOD_Z4M_CODEGEN_VERSION_NUMBER','1.3');
 /**
  * Module version date
  * @var string Date in W3C format
  */
-define('MOD_Z4M_CODEGEN_VERSION_DATE','2025-06-10');
+define('MOD_Z4M_CODEGEN_VERSION_DATE','2025-09-03');
